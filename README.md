@@ -11,7 +11,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-Your must move CFNetwork framework In Link Binary with Libraies, otherwise it will crash bofore iOS 9, because NSURLSessionTaskPriorityDefault
+Your must move CFNetwork framework In Link Binary with Libraies, otherwise it will crash before iOS 9, because NSURLSessionTaskPriorityDefault
 
 
 ## Installation

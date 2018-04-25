@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.summary          = 'MCNetwork.'
   s.description      = '基础网络组件库'
 
-  s.homepage         = 'git@121.41.108.203:eCook'
+  s.homepage         = 'https://github.com/vcvf/MCNetwork'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '1594717129@qq.com' => '1594717129@qq.com' }
-  s.source           = { :git => 'git@121.41.108.203:eCook/MCNetwork.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/vcvf/MCNetwork.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
