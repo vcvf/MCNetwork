@@ -1,0 +1,39 @@
+{
+  "name": "MCNetwork",
+  "version": "0.1.0",
+  "summary": "MCNetwork.",
+  "description": "基础网络组件库",
+  "homepage": "git@121.41.108.203:eCook",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1594717129@qq.com": "1594717129@qq.com"
+  },
+  "source": {
+    "git": "git@121.41.108.203:eCook/MCNetwork.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "public_header_files": "MCNetwork/MCNetwork.h",
+  "source_files": "MCNetwork/Classes",
+  "frameworks": "CFNetwork",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.1.0"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Request",
+      "source_files": "MCNetwork/Classes/Request/**/*"
+    },
+    {
+      "name": "Serialization",
+      "source_files": "MCNetwork/Classes/Serialization/**/*"
+    }
+  ]
+}

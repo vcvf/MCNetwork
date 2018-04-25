@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCDownloadAdvancedViewController">
+            <connections>
+                <outlet property="btnAllCancel" destination="QSZ-b6-Tl6" id="xyc-JY-eVB"/>
+                <outlet property="btnAllStart" destination="MNb-3x-5f6" id="lWv-Kx-N0U"/>
+                <outlet property="tableView" destination="rlL-fG-Xlu" id="Hcr-ze-wGg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rlL-fG-Xlu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="w69-XN-TfZ"/>
+                        <outlet property="delegate" destination="-1" id="CY1-xy-qSV"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNb-3x-5f6">
+                    <rect key="frame" x="156" y="627" width="62" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="EkH-dN-BZt"/>
+                        <constraint firstAttribute="width" constant="62" id="k4v-iO-HSs"/>
+                    </constraints>
+                    <state key="normal" title="全部开始"/>
+                    <connections>
+                        <action selector="allStart:" destination="-1" eventType="touchUpInside" id="7iK-dT-1R3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSZ-b6-Tl6">
+                    <rect key="frame" x="313" y="627" width="62" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="uad-H9-Wra"/>
+                        <constraint firstAttribute="height" constant="40" id="xUQ-6d-bY1"/>
+                    </constraints>
+                    <state key="normal" title="全部结束"/>
+                    <connections>
+                        <action selector="allCancel:" destination="-1" eventType="touchUpInside" id="oea-Qh-2e9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QSZ-b6-Tl6" secondAttribute="bottom" id="FDj-N3-Kga"/>
+                <constraint firstItem="rlL-fG-Xlu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IlQ-jR-N0K"/>
+                <constraint firstAttribute="trailing" secondItem="QSZ-b6-Tl6" secondAttribute="trailing" id="Pfv-9A-2w1"/>
+                <constraint firstItem="rlL-fG-Xlu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aKi-oJ-4Fl"/>
+                <constraint firstAttribute="trailing" secondItem="rlL-fG-Xlu" secondAttribute="trailing" id="eI4-va-xkh"/>
+                <constraint firstAttribute="bottom" secondItem="MNb-3x-5f6" secondAttribute="bottom" id="ewu-J8-tiM"/>
+                <constraint firstAttribute="bottom" secondItem="rlL-fG-Xlu" secondAttribute="bottom" constant="40" id="kG3-z6-Lzq"/>
+                <constraint firstItem="MNb-3x-5f6" firstAttribute="top" secondItem="rlL-fG-Xlu" secondAttribute="bottom" id="kVR-J8-XyJ"/>
+                <constraint firstItem="MNb-3x-5f6" firstAttribute="centerX" secondItem="rlL-fG-Xlu" secondAttribute="centerX" id="onK-kN-TLx"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
